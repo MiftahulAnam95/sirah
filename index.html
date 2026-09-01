@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Arsip digital interaktif Sirah Nabawiyah berdasarkan Ar-Rahiq Al-Makhtum karya Syaikh Shafiyyurrahman Al-Mubarakfuri."
+    />
+    <meta name="theme-color" content="#171711" />
+    <title>Sirah Nabawiyah | Arsip Digital Interaktif</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <button type="button" class="skip-link" id="skip-link">Lewati ke isi utama</button>
+
+    <header class="topbar">
+      <div class="topbar-progress" id="topbar-progress" aria-hidden="true"></div>
+      <div class="topbar-inner">
+        <div class="topbar-left" id="topbar-left"></div>
+        <div class="topbar-center" id="topbar-center" aria-live="polite">ARSIP DIGITAL</div>
+        <div class="topbar-actions">
+          <div class="language-switcher" aria-label="Pilihan bahasa">
+            <button type="button" class="is-active" data-locale="id" aria-pressed="true">ID</button>
+            <button type="button" data-locale="ar" aria-pressed="false">العربية</button>
+            <button type="button" data-locale="en" aria-pressed="false">EN</button>
+          </div>
+          <button class="sound-toggle" id="sound-toggle" type="button" aria-pressed="false">
+            <svg class="icon" id="sound-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 10v4h3l4 3V7l-4 3H5Z" />
+              <path d="m16 9 5 6m0-6-5 6" />
+            </svg>
+            <span id="sound-label">Suara gurun</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1"></main>
+
+    <div id="drawer-layer"></div>
+    <div id="notice-layer"></div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
